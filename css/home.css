@@ -1,0 +1,43 @@
+.banner-image{
+    /* object-fit: cover; */
+    /* width: calc(100vw/1440px); */
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/images/banner-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+@media (max-width: 767px) {
+    .banner-image{
+        background-image: url("/images/banner-mobile.png");
+    }
+}
+
+.logo-image{
+    position: absolute;
+    top: 200px;
+    left: 0;
+    margin-left: 100px;
+}
+
+@media (max-width: 767px) {
+    .logo-image{
+        padding: 0 30px;
+        margin-left: 0;
+        top: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-logo{
+        width: 300px;
+    }
+}
+
+html{
+    overflow-x: hidden;
+}
+

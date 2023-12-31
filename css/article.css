@@ -1,0 +1,134 @@
+.article{
+    padding: 150px 100px;
+    padding-bottom: 500px;
+    min-height: 100vh;
+    background-image: url("/images/bg-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .article{
+        padding: 150px 20px;
+        padding-top: 0;
+        background-image: url("/images/bg-mobile.jpg");
+        background-size: contain;
+        background-color: white;
+        background-position: bottom;
+        
+    }
+}
+
+.container-cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.cards{
+    width: 450px;
+    position: relative;
+}
+
+.info-container{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    border-radius: 10px;
+    padding: 3px 7px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+}
+
+.bi-camera-fill, .bi-play-circle-fill{
+    color: gainsboro;
+}
+
+.container-img{
+    width: auto;
+    overflow: hidden;
+    border-radius: 16px;
+    
+}
+
+.container-img img{
+    width: 100%;
+    transition: transform 1s;
+}
+
+:hover.cards img{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+:hover.cards .article-title{
+    color: #FF9A3C;
+    cursor: pointer;
+}
+
+
+
+.article-title{
+    padding-top: 30px;
+    color: #212427;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.article-date{
+    color: #6C6C6C;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.btn-check{
+    background: black;
+    border-radius: 20px;
+}
+
+.btn-group {
+    display: flex;
+    background: linear-gradient(239deg, #59FFB9 -37.86%, #326CFF 92.79%);
+    border-radius: 20px;
+    font-family: Montserrat;
+}
+  
+.btn {
+    /* background: linear-gradient(239deg, #59FFB9 -37.86%, #326CFF 92.79%); */
+    border: none;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 20px;
+}
+
+.btn-check:checked + .btn {
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.50);
+}
+:hover.btn-check + .btn {
+    color: white;
+}
+
+.btn-group > .btn-group:not(:last-child) > .btn,
+.btn-group > .btn.dropdown-toggle-split:first-child,
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 20px; /* Ubah nilai sesuai keinginan Anda */
+    border-bottom-right-radius: 20px; /* Ubah nilai sesuai keinginan Anda */
+}

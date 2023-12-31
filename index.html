@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Test Danurrizad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/sponsor.css">
+    <link rel="stylesheet" href="css/galery.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="js/article.js"></script>
+    <script src="js/navbar.js"></script>
+</head>
+<body>
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg custom-navbar rounded-5 z-3 ">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/navbar-brand.png" alt="Logo" height="30" class="d-inline-block align-top">
+            </a>
+    
+            <!-- Toggler button for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-grid-fill" id="toggler-icon"></i></i>
+            </button>
+    
+            <!-- Navbar menu items -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link single text-black" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link single text-black" href="#about-event">Tentang Acara</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link single text-black" href="#gallery">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link single text-black" href="#news">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-registrasi text-white " href="https://event.detik.com/" target="_blank">Registrasi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+
+
+      <!-- BANNER -->
+      <section id="home" class="banner h-100 ">
+        <div class="position-relative z-0  ">
+          <div class="banner-image" src="images/banner-desktop.ng" alt="">
+          <div class="logo-image">
+            <img class="banner-logo" src="images/logo-event 2.png" alt="">
+            <a href="#about-event"  class="button my-4">
+              TENTANG ACARA
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ABOUT -->
+      <section id="about-event" class="about py-5 align-items-center d-flex">
+        <div class="row justify-content-between containers pt-5">
+          <div class="col-md-6 col-12 containers event d-flex justify-content-start ">
+              <div class="card">
+                  <div class="img-container">
+                    <img src="images/map 1.png" alt="jalur-fun-run">
+                  </div>
+                  <h1 class="card-title pt-3">10K FUN RUN</h1>
+                  <h2 class="card-caption">Dimulai pukul 6 pagi, nikmati pemandangan kota di pagi hari dimulai dari Bundaran HI hingga Patung Pemuda Membangun di Senayan lalu kembali lagi ke Bundaran HI!</h2>
+              </div>
+          </div>
+          <div class="containers col-md-6 col-12 d-flex flex-column justify-content-between ">
+            <div class="row">
+              <div class="card">
+                <h1 class="card-title">GRATIS DAN BERHADIAH</h1>
+                <h2 class="card-caption">Pendaftaran gratis! Ajak keluarga anda dan menangkan hadiah total puluhan juta rupiah doorprize menarik!</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="card">
+                <h1 class="card-title">50+ TENANT BAZZAR</h1>
+                <h2 class="card-caption">Dapatkan promo menarik pada booth-booth tenant bazzar Sudirman Run 2023 mulai dari F&B hingga fashion</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="card flex-lg-row  gap-3 ">
+                <div class="img-container performance">
+                  <img class="img-performance" src="images/special-performance.png" alt="special-performance">
+                </div>
+                <div class="">
+                  <h1 class="card-title">SPECIAL PERFORMANCE</h1>
+                  <h2 class="card-caption">Saksikan penampilan dari RAN, Ayu Ting Ting, Diskoria, serta hiburan lainnya!</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center py-5">
+            <a class="button" href="https://event.detik.com/" target="_blank" style="text-decoration: none;">DAFTAR SEKARANG</a>
+          </div>
+        </div>
+
+      </section>
+
+
+
+      <!-- SPONSOR -->
+      <section class="sponsor py-5">
+        <h1 class="title-sponsor text-center text-white">DIDUKUNG OLEH</h1>
+        <div class="container-sponsor mt-5">
+          <div class="client-slider">
+            <div class="slider-track">
+              <div class="client-logo">
+                <img src="images/logo-sponsor (1).png" alt="Client 1">
+              </div>
+              <div class="client-logo">
+                <img src="images/logo-sponsor (2).png" alt="Client 2">
+              </div>
+              <div class="client-logo">
+                <img src="images/logo-sponsor (3).png" alt="Client 3">
+              </div>
+              <div class="client-logo">
+                <img src="images/logo-sponsor (4).png" alt="Client 4">
+              </div>
+              <div class="client-logo">
+                <img src="images/logo-sponsor (5).png" alt="Client 5">
+              </div>
+              <div class="client-logo">
+                <img src="images/logo-sponsor (6).png" alt="Client 6">
+              </div>
+              <div class="client-logo">
+                <img src="images/logo-sponsor (7).png" alt="Client 7">
+              </div>
+              <div class="client-logo">
+                <img src="images/logo-sponsor (8).png" alt="Client 8">
+              </div>
+            </div>
+            <div class="slider-track">
+              <div class="client-logo">
+                <img src="images/logo-sponsor (1).png" alt="Client 1">
+              </div>
+              <div class="client-logo">
+                <img src="images/logo-sponsor (2).png" alt="Client 2">
+              </div>
+              <div class="client-logo">
+                <img src="images/logo-sponsor (3).png" alt="Client 3">
+              </div>
+              <div class="client-logo">
+                <img src="images/logo-sponsor (4).png" alt="Client 4">
+              </div>
+              <div class="client-logo">
+                <img src="images/logo-sponsor (5).png" alt="Client 5">
+              </div>
+              <div class="client-logo">
+                <img src="images/logo-sponsor (6).png" alt="Client 6">
+              </div>
+              <div class="client-logo">
+                <img src="images/logo-sponsor (7).png" alt="Client 7">
+              </div>
+              <div class="client-logo">
+                <img src="images/logo-sponsor (8).png" alt="Client 8">
+              </div>
+            </div>
+          </div>
+          
+          
+          
+        </div>
+      </div>
+      </section>
+
+
+
+      <!-- GALERY -->
+      <section id="gallery" class="galery">
+        <h1 class="title-galery text-black text-center">GALERY SUDIRMAN RUN 2022</h1>
+        <div id="carouselExampleIndicators" class="carousel slide py-5 ">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/main-img-1.png" class="d-block w-100" alt="main-1">
+            </div>
+            <div class="carousel-item">
+              <img src="images/main-img-2.png" class="d-block w-100" alt="main-2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/main-img-3.png" class="d-block w-100" alt="main-3">
+            </div>
+            <div class="carousel-item">
+              <img src="images/main-img-4.png" class="d-block w-100" alt="main-4">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-container">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-container">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active thumbnail" aria-current="true" aria-label="Slide 1">
+              <img src="images/main-img-1.png" class="d-block w-100" alt="main-1">
+            </button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="thumbnail" aria-label="Slide 2">
+              <img src="images/main-img-2.png" class="d-block w-100" alt="main-2">
+            </button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="thumbnail" aria-label="Slide 3">
+              <img src="images/main-img-3.png" class="d-block w-100" alt="main-3">
+            </button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="thumbnail" aria-label="Slide 4">
+              <img src="images/main-img-4.png" class="d-block w-100" alt="main-4">
+            </button>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- ARTICLES -->
+      <section id="news" class="article">
+        <h1 class="title-galery py-5 text-center">ARTIKEL TERKAIT</h1>
+        <div class="d-flex justify-content-center pb-5">
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="btnradio1">Artikel</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio2">Foto</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio3">Video</label>
+          </div>
+        </div>
+        <div class="container-cards">
+          <div class="cards" id="cards1">
+            <div class="container-img">
+              <img src="images/artikel-1.png" alt="">
+              <div class="info-container"></div>
+            </div>
+            <h1 class="article-title">Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme Beberkan Prosesnya</h1>
+            <h2 class="article-date">Sabtu, 25 Nov 2023 20:00 WIB</h2>
+          </div>
+          <div class="cards" id="cards2">
+            <div class="container-img">
+              <img src="images/artikel-2.png" alt="">
+              <div class="info-container"></div>
+            </div>
+            <h1 class="article-title">Edukasi Lingkungan Hidup Bonus Sehat di 'Misi Lestari 2023: See Nature</h1>
+            <h2 class="article-date">Selasa, 28 Nov 2023 07:42 WIB</h2>
+          </div>
+          <div class="cards" id="cards3">
+            <div class="container-img">
+              <img src="images/artikel-3.png" alt="">
+              <div class="info-container"></div>
+            </div>
+            <h1 class="article-title">Gokil! Puluhan Ribu Orang Ramaikan Pertamina Eco RunFest 2023</h1>
+            <h2 class="article-date">Minggu, 26 Nov 2023 13:04 WIB</h2>
+          </div>
+          <div class="cards" id="cards4">
+            <div class="container-img">
+              <img src="images/artikel-4.png" alt="">
+              <div class="info-container"></div>
+            </div>
+            <h1 class="article-title">Kelar Lari di CT Arsa Charity Fun Run, 'Recharge' Energi Nonton Maliq & D'essentials</h1>
+            <h2 class="article-date">Sabtu, 18 Nov 2023 17:39 WIB</h2>
+          </div>
+          <div class="cards" id="cards5">
+            <div class="container-img">
+              <img src="images/artikel-5.png" alt="">
+              <div class="info-container"></div>
+            </div>
+            <h1 class="article-title">
+              CT Arsa Charity Fun Run 2023 Bertabur Emas</h1>
+            <h2 class="article-date">Kamis, 16 Nov 2023 16:34 WIB</h2>
+          </div>
+          <div class="cards" id="cards6">
+            <div class="container-img">
+              <img src="images/artikel-6.png" alt="">
+              <div class="info-container"></div>
+            </div>
+            <h1 class="article-title">BTN Jakarta Run 2023 Dorong dan Geliatkan Sport Tourism Jakarta</h1>
+            <h2 class="article-date">Minggu, 12 Nov 2023 11:55 WIB</h2>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center pt-5">
+          <a href="https://www.detik.com/search/searchall?query=fun+run&siteid=2" target="_blank" class="button">LIHAT LEBIH BANYAK</a>
+        </div>
+      </section>
+
+
+
+      <!-- FOOTER -->
+      <section id="footer" class="footer">
+        <div class="d-flex justify-content-lg-start justify-content-center ">
+          <img class=" footer-logo" src="images/logo-event.png" alt="">
+        </div>
+        <div class="d-flex flex-lg-row flex-column pt-lg-4 pt-5 container-footer justify-content-between ">
+          <h2 class="footer-text text-lg-start text-center">Event olahraga lari sejauh 10 kilometer yang diselenggarakan oleh Detikhealth secara gratis untuk masyarakat Indonesia. Ajak keluarga dan kerabat anda untuk ikut keseruan Sudirman Run 2023 lalu menangkan hadiah utama serta doorprize dengan total puluhan juta rupiah</h2>
+          <div>
+            <h2 class="footer-text text-center">Connect with us</h2>
+            <div class="d-flex justify-content-lg-between justify-content-center  gap-2">
+              <img src="images/facebook.png" alt="">
+              <img src="images/x.png" alt="">
+              <img src="images/instagram.png" alt="">
+              <img src="images/linkedin.png" alt="">
+              <img src="images/youtube.png" alt="">
+            </div>
+          </div>
+        </div>
+        <h2 class="pt-lg-5 footer-text copyright text-lg-start text-center">Copyright @ 2023 detikcom. All right reserved</h2>
+      </section>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <!-- Bootstrap JS, Popper.js, and jQuery -->
+      <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha384-i9IYZC8gIbAvm9Jz0DBy/G21WgmgX+nuW2u9iYd7kW2qrGcA/Q8VggeYRTtN3f5J" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-2Qlq3eT0/QnlXdaZbc5Ly8KGvzys39uxyDA6w9PTjNAOvSS2Tt6f/x3ShYw4bW5J" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-rqKOR9QAmU4sPYlcp6iQjQh5lC1LzDD86sMNP1NWB31mXzfoLMT8ZCZtSWBOpI7k" crossorigin="anonymous"></script>      
+      
+      <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Memantau perubahan pada radio button
+          const radioButtons = document.querySelectorAll('.btn-check');
+          radioButtons.forEach(radioButton => {
+            radioButton.addEventListener('change', function () {
+              updateInfoContainers();
+            });
+          });
+      
+          // infoContainer Photo or Video
+          function updateInfoContainers() {
+            const infoContainers = document.querySelectorAll('.info-container');
+            infoContainers.forEach(infoContainer => {
+              infoContainer.innerHTML = ''; 
+              infoContainer.style.backgroundColor = 'transparent';
+      
+              if (document.getElementById('btnradio2').checked) { 
+                const photoInfo = document.createElement('div');
+                photoInfo.textContent = '5 Foto'; 
+
+                const cameraIcon = document.createElement('i');
+                cameraIcon.classList.add('bi', 'bi-camera-fill');
+
+                infoContainer.appendChild(cameraIcon);
+                infoContainer.appendChild(photoInfo);
+                infoContainer.style.backgroundColor = 'rgba(33, 36, 39, 0.5)';
+              } else if (document.getElementById('btnradio3').checked) { 
+                const videoInfo = document.createElement('div');
+                videoInfo.textContent = '01:45'; 
+
+                const videoIcon = document.createElement('i');
+                videoIcon.classList.add('bi', 'bi-play-circle-fill');
+                infoContainer.appendChild(videoIcon);
+                infoContainer.appendChild(videoInfo);
+                infoContainer.style.backgroundColor = 'rgba(33, 36, 39, 0.5)';
+              }
+            });
+          }
+        });
+      </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const togglerIcon = document.getElementById('toggler-icon');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+    
+            navbarToggler.addEventListener('click', function () {
+                // Toggle antara ikon grid dan ikon silang
+                togglerIcon.classList.toggle('bi-grid-fill');
+                togglerIcon.classList.toggle('bi-x');
+            });
+        });
+    </script> -->
+    </body>
+</html>
