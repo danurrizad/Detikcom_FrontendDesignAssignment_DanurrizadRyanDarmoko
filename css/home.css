@@ -1,6 +1,4 @@
 .banner-image{
-    /* object-fit: cover; */
-    /* width: calc(100vw/1440px); */
     width: 100vw;
     height: 100vh;
     background-image: url("/images/banner-desktop.png");
@@ -8,12 +6,6 @@
     background-size: cover;
     background-position: center;
     
-}
-
-@media (max-width: 767px) {
-    .banner-image{
-        background-image: url("/images/banner-mobile.png");
-    }
 }
 
 .logo-image{
@@ -24,20 +16,36 @@
 }
 
 @media (max-width: 767px) {
+    .banner-image{
+        background-image: url("/images/banner-mobile.png");
+    }
+
     .logo-image{
         padding: 0 30px;
         margin-left: 0;
         top: 150px;
     }
-}
 
-@media (max-width: 767px) {
     .banner-logo{
         width: 300px;
     }
 }
 
-html{
-    overflow-x: hidden;
+@media (min-width: 767px) and (max-width: 1024px) {
+    .banner-logo{
+        width: 350px !important;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .banner-logo{
+        width: 450px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1536px) {
+    .banner-logo{
+        width: 550px;
+    }
 }
 

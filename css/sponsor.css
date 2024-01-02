@@ -3,11 +3,6 @@
     padding: 100px 0px;
 }
 
-@media (max-width: 767px) {
-    .sponsor{
-        padding: 100px 0px;
-    }
-}
 
 
 .title-sponsor{
@@ -20,11 +15,6 @@
     line-height: normal;
 }
 
-@media (max-width: 767px){
-    .title-sponsor{
-        font-size: 24px;
-    }
-}
 
 .container-sponsor{
     padding: 0px !important;
@@ -35,6 +25,7 @@
     overflow: hidden;
     margin: auto;
     position: relative;
+    
   }
 
 .client-slider .slider-track{
@@ -45,13 +36,13 @@
 }
 
 .client-slider .client-logo {
-    height: 100px;
-    width: 250px;
+    height: 94px;
+    width: 236px;
 }
 
 .client-slider .client-logo img{
-    width: 80%;
-    height: 100px;
+    width: 216px;
+    height: 94px;
     border-radius: 10px;
 }
 
@@ -73,4 +64,18 @@
     }
 }
 
+
+
+
+
+
+@media (max-width: 767px) {
+    .sponsor{
+        padding: 100px 0px;
+    }
+
+    .title-sponsor{
+        font-size: 24px !important;
+    }
+}
 

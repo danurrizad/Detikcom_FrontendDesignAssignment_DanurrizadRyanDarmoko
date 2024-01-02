@@ -11,18 +11,6 @@
     width: 100%;
 }
 
-@media (max-width: 767px) {
-    .article{
-        padding: 350px 20px;
-        padding-top: 0;
-        background-image: url("/images/bg-mobile.jpg");
-        background-size: cover;
-        background-color: white;
-        background-position: bottom;
-        
-    }
-}
-
 .container-cards{
     width: 100%;
     display: flex;
@@ -31,25 +19,8 @@
     row-gap: 80px;
 }
 
-@media (max-width: 767px) {
-    .container-cards{
-        row-gap: 30px;
-    }
-}
-
 .cards{
-    width: 450px; /* Menggunakan lebar 100% agar sesuai dengan flex container */
-    /* max-width: 450px; Menggunakan max-width untuk memberikan batasan lebar */
-    /* position: relative; */
-}
-
-@media (max-width: 767px) {
-    .cards {
-        display: flex;
-        gap: 10px;
-        row-gap: 20px;
-        /* flex: 0 0 calc(90% - 10px);  */
-    }
+    width: 450px;
 }
 
 .info-container{
@@ -66,17 +37,6 @@
     font-family: Montserrat;
 }
 
-@media (max-width: 767px) {
-    .info-container{
-        position: absolute;
-        font-size: 6px;
-        right: 5px;
-        top: 5px;
-        padding : 2px;
-
-    }
-}
-
 .bi-camera-fill, .bi-play-circle-fill{
     color: gainsboro;
 }
@@ -88,25 +48,11 @@
     position: relative;
 }
 
-@media (max-width: 767px) {
-    .container-img{
-        width: 100px !important;
-        height: 100px !important ;
-        box-sizing: content-box;
-    }
-}
-
 .container-img img{
     width: 100%;
     transition: transform 1s;
 }
 
-@media (max-width: 767px) {
-    .container-img img{
-        width: 100% !important;
-        height: 100%;
-    }
-}
 
 .container-text{
     height: 3em;
@@ -124,11 +70,6 @@
 }
 
 
-@media (max-width: 767px) {
-    .article-title{
-       padding-top: 0 !important;
-    }
-}
 .article-title{
     padding-top: 30px;
     color: #212427;
@@ -187,4 +128,103 @@
 .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
     border-top-right-radius: 20px; /* Ubah nilai sesuai keinginan Anda */
     border-bottom-right-radius: 20px; /* Ubah nilai sesuai keinginan Anda */
+}
+
+
+
+
+@media (max-width: 767px) {
+    .article{
+        padding: 350px 20px;
+        padding-top: 0;
+        background-image: url("/images/bg-mobile.jpg");
+        background-size: cover;
+        background-color: white;
+        background-position: bottom;   
+    }
+
+    .container-cards{
+        row-gap: 30px !important;
+    }
+
+    .cards {
+        display: flex;
+        gap: 10px;
+        row-gap: 20px;
+    }
+
+    .info-container{
+        position: absolute;
+        font-size: 8px;
+        right: 5px !important;
+        top: 5px !important;
+        padding : 2px;
+    }
+
+    .container-img{
+        width: 100px !important;
+        height: 100px !important ;
+        box-sizing: content-box;
+    }
+
+    .container-img img{
+        width: 100% !important;
+        height: 100%;
+    }
+
+    .article-title{
+        padding-top: 0 !important;
+     }
+}
+
+@media(min-width: 767px) and (max-width: 1024px) {
+    .article{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .info-container{
+        position: absolute;
+        font-size: 8px;
+        right: 5px;
+        top: 5px;
+        padding : 2px;
+
+    }
+
+    .container-cards{
+        row-gap: 20px;
+    }
+
+    .cards{
+        display: flex;
+        gap: 10px;
+        row-gap: 20px;
+        width: 100% !important;
+    }
+
+    .container-img{
+        width: 200px !important;
+        height: 200px !important ;
+        box-sizing: content-box;
+    }
+
+    .container-img img{
+        width: 100% !important;
+        height: 100%;
+    }
+}
+@media (min-width: 1280px) and (max-width: 1536px) {
+    .article{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .container-cards{
+        row-gap: 0;
+    }
+
+    .cards{
+        width: 380px !important;
+    }
 }

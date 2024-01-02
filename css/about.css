@@ -3,62 +3,27 @@
     padding: 200px 100px;
 }
 
-@media (max-width: 767px) {
-    .about{
-        padding: 150px 0px !important;
-    }
-}
-
 .containers{
     padding: 0 20px;
     padding-top: 60px;
-}
-
-@media (max-width: 767px) {
-    .containers{
-        padding: 0 10px !important;
-        width: 100vw;
-        margin: 0 !important;
-        gap: 20px;
-    }
-}
-
-@media (max-width: 767px) {
-    .containers.event{
-        padding: 0 !important;
-    }
+    
 }
 
 .card{
-    /* height: 100px; */
-    /* padding-right: 100px; */
     padding: 30px !important;
     border-radius: 32px;
-    /* background: linear-gradient(237deg, #59FFB9 -30.09%, #326CFF 71.21%); */
-    /* background: linear-gradient(258deg, #326CFF, #59FFB9 51%, #326CFF) var(--x, 0)/ 200%; */
     background: linear-gradient(var(--x, 237deg), #326CFF, #59FFB9 var(--y, -30.09%), #326CFF) var(--z, 0)/200%;
     transition: 1s;
     width: auto;
     height: auto;
 }
 
-@media (max-width: 767px) {
-    .card{
-        width: 100% !important;
-        padding: 25px !important;
-    }
-}
 
 .img-container{
     border-radius: 32px;
     overflow: hidden;
 }
 
-@media (max-width: 767px) {
-    .img-container{
-        width: 100%;
-    }
-}
 
 .card img{
     overflow: hidden;
@@ -70,12 +35,6 @@
 .img-container.performance{
     min-height: fit-content;
     width: fit-content;
-}
-
-@media (max-width: 767px) {
-    .img-container.performance{
-        width: 100%;
-    }
 }
 
 .img-performance{
@@ -106,12 +65,6 @@
     line-height: normal;
 }
 
-@media (max-width: 767px){
-    .card-title{
-        font-size: 24px;
-    }
-}
-
 .card-caption{
     color: #FFF;
     font-family: Montserrat;
@@ -121,11 +74,7 @@
     line-height: normal;
 }
 
-@media (max-width: 767px){
-    .card-caption{
-        font-size: 14px;
-    }
-}
+
 
 .button{
     width: fit-content;
@@ -149,14 +98,102 @@
     text-decoration: none;
 }
 
-@media (max-width: 767px) {
-    .button{
-        font-size: 14px;
-    }
-}
 
 :hover.button{
     border-radius: 100px;
     background: #FF9A3C;
     box-shadow: 0px 18px 40px 12px rgba(255, 154, 60, 0.25);
+}
+
+
+
+
+@media (max-width: 767px) {
+    .about{
+        padding: 150px 0px !important;
+    }
+
+    .containers{
+        padding: 0 10px !important;
+        width: 100vw;
+        margin: 0 !important;
+        gap: 20px;
+    }
+
+    .containers.event{
+        padding: 0 !important;
+    }
+
+    .card{
+        width: 100% !important;
+        padding: 25px !important;
+    }
+
+    .img-container{
+        width: 100%;
+    }
+
+    .img-container.performance{
+        width: 100%;
+    }
+
+    .card-title{
+        font-size: 24px !important;
+    }
+
+    .card-caption{
+        font-size: 14px !important;
+    }
+
+    .button{
+        font-size: 14px;
+    }
+}
+
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    .containers.event2{
+        gap: 20px !important;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .about{
+        padding: 150px 45px !important;
+    }
+    .card{
+        padding: 20px !important;
+    }
+    .card-title{
+        font-size: 26px !important;
+    }
+
+    .card-caption{
+        font-size: 10px !important;
+    }
+
+    .containers.event2{
+        gap: 20px !important;
+        padding-right: 30px;
+    }
+
+    .button{
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1536px) {
+    .card-title{
+        font-size: 32px;
+    }
+
+    .card-caption{
+        font-size: 12px !important;
+    }
+
+    .button{
+        font-size: 14px;
+        padding: 12px 22px;
+    }
 }

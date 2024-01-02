@@ -1,17 +1,11 @@
 .galery{
     padding: 150px 100px;
-    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-@media (max-width: 767px) {
-    .galery{
-        padding: 150px 20px;
-        padding-bottom: 50px;
-    }
-}
+
 .title-galery{
     color: #212427;
     text-align: center;
@@ -21,21 +15,12 @@
     font-weight: 900;
     line-height: normal;
 }
-@media (max-width: 767px) {
-    .title-galery{
-        font-size: 22px;
-    }
-}
+
 
 .carousel{
     width: 75%;
 }
 
-@media (max-width: 767px) {
-    .carousel{
-        width: 100%;
-    }
-}
 
 .carousel-indicators button.thumbnail{
     width: 100%;
@@ -45,11 +30,6 @@
     border-radius: 16px;
 }
 
-@media (max-width: 767px) {
-    .carousel-indicators button img{
-        border-radius: 8px;
-    }
-}
 
 .carousel-indicators button.thumbnail:not(.active){
     opacity: 1;
@@ -62,11 +42,7 @@
     margin-left: 0;
     justify-content: space-between;
 }
-@media (max-width: 767px) {
-    .carousel-indicators{
-        gap: 0;
-    }
-}
+
 .carousel .carousel-inner{
     max-height: 70vh;
 }
@@ -79,30 +55,17 @@
     border-color: #ff0000; 
 }
 
-@media (max-width: 767px){
-    .carousel-control-prev, .carousel-control-next{
-        visibility: hidden;
-    }
-}
 
 .carousel-control-container{
     background-color: gainsboro;
     border-radius: 100%;
-    /* width: 100px;
-    height: 100px; */
     padding: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-@media (max-width: 767px){
-    .carousel-control-container{
-        width: 40px;
-        height: 40px;
-        padding: 0px;
-    }
-}
+
 
 .carousel-item{
     width: 100%;
@@ -110,9 +73,43 @@
 }
 
 .carousel-inner{
-    /* overflow: hidden; */
-    /* overflow-y: visible; */
     max-height: 100vh !important;
     height: 100%;
 }
 
+@media (max-width: 767px) {
+    .galery{
+        padding: 150px 20px;
+        padding-bottom: 50px;
+    }
+
+    .title-galery{
+        font-size: 22px !important;
+    }
+
+    .carousel{
+        width: 100% !important;
+    }
+
+    .carousel-indicators button img{
+        border-radius: 8px !important;
+    }
+
+    .carousel-indicators{
+        gap: 0 !important;
+    }
+
+    .carousel-control-prev, .carousel-control-next{
+        visibility: hidden;
+    }
+    
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    .carousel{
+        width: 100% !important;
+    }
+    .carousel-control-prev, .carousel-control-next{
+        visibility: hidden;
+    }
+}
