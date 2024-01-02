@@ -13,10 +13,10 @@
 
 @media (max-width: 767px) {
     .article{
-        padding: 150px 20px;
+        padding: 350px 20px;
         padding-top: 0;
         background-image: url("/images/bg-mobile.jpg");
-        background-size: contain;
+        background-size: cover;
         background-color: white;
         background-position: bottom;
         
@@ -40,7 +40,7 @@
 .cards{
     width: 450px; /* Menggunakan lebar 100% agar sesuai dengan flex container */
     /* max-width: 450px; Menggunakan max-width untuk memberikan batasan lebar */
-    position: relative;
+    /* position: relative; */
 }
 
 @media (max-width: 767px) {
@@ -66,6 +66,17 @@
     font-family: Montserrat;
 }
 
+@media (max-width: 767px) {
+    .info-container{
+        position: absolute;
+        font-size: 6px;
+        right: 5px;
+        top: 5px;
+        padding : 2px;
+
+    }
+}
+
 .bi-camera-fill, .bi-play-circle-fill{
     color: gainsboro;
 }
@@ -74,6 +85,7 @@
     width: auto;
     overflow: hidden;
     border-radius: 16px;
+    position: relative;
 }
 
 @media (max-width: 767px) {

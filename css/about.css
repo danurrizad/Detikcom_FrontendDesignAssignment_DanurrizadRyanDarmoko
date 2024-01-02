@@ -56,7 +56,7 @@
 
 @media (max-width: 767px) {
     .img-container{
-        
+        width: 100%;
     }
 }
 
@@ -71,6 +71,13 @@
     min-height: fit-content;
     width: fit-content;
 }
+
+@media (max-width: 767px) {
+    .img-container.performance{
+        width: 100%;
+    }
+}
+
 .img-performance{
     width: 100% !important;
     height: 100% !important;
