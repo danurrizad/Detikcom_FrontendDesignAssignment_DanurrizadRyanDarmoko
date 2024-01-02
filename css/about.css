@@ -33,8 +33,8 @@
 }
 
 .img-container.performance{
-    min-height: fit-content;
-    width: fit-content;
+    width: 130px;
+    height: 130px;
 }
 
 .img-performance{
@@ -135,6 +135,7 @@
 
     .img-container.performance{
         width: 100%;
+        height: 100%;
     }
 
     .card-title{
@@ -155,6 +156,10 @@
     .containers.event2{
         gap: 20px !important;
     }
+    .img-container.performance{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) {
@@ -171,6 +176,7 @@
     .card-caption{
         font-size: 10px !important;
     }
+    
 
     .containers.event2{
         gap: 20px !important;
