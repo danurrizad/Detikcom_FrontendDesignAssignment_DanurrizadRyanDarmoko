@@ -74,7 +74,6 @@
     width: auto;
     overflow: hidden;
     border-radius: 16px;
-    border: 2px solid red;   
 }
 
 @media (max-width: 767px) {
